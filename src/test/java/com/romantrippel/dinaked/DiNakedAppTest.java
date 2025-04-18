@@ -1,10 +1,13 @@
 package com.romantrippel.dinaked;
 
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 
-public class DiNakedAppTest extends TestCase {
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    public void testGetMessage() {
+public class DiNakedAppTest {
+
+    @Test
+    void testGetMessage() {
         String expected = "Hello from DI Framework!";
         String actual = DiNakedApp.getMessage();
         assertEquals(expected, actual);
